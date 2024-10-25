@@ -1,0 +1,761 @@
+from snakemake.io import glob_wildcards, expand
+glob_wildcards("reads/{condition}_1_1.fq")
+exit
+exit()
+from snakemake.io import glob_wildcards,expand
+expand("{indir}.{sample}_{end}.fq.count", indir=['reads', 'trimmed'], sample=SAMPLES, end=["1","2"])
+SAMPLES = glob_wildcards("reads/{sample}_1.fq").sample
+expand("{indir}/{sample}_{end}.fq.count", indir=['reads','trimmed'], sample=SAMPLES, end=['1','2'])
+exit()
+glob_wildcards("FasrBio.{protein}.20_6_2022.txt")
+from snakemake.io import glob_wildcards, expand
+exit
+exit()
+glob_wildcards("FasrBio.{protein}.20_6_2022.txt")
+from snakemake.io import glob_wildcards, expand
+glob_wildcards("FasrBio.{protein}.20_6_2022.txt")
+glob_wildcards("FastBio.{protein}.20_6_2022.txt")
+expand("FastBio.{prot}.20_6_2022.txt",prot=PROT)
+PROT=glob_wildcards("FastBio.{protein}.20_6_2022.txt")
+expand("FastBio.{prot}.20_6_2022.txt",prot=PROT)
+exit()
+PROT=glob_wildcards("FastBio.{protein}.20_6_2022.txt")
+from snakemake.io import glob_wildcards, expand
+PROT=glob_wildcards("FastBio.{protein}.20_6_2022.txt")
+PROT
+PROT=glob_wildcards("./proteins/FastBio.{protein}.20_6_2022.txt")
+PROT
+exit()
+data="g__Acaryochloris.s__Acaryochloris_marina0
+data="g__Acaryochloris.s__Acaryochloris_marina"
+data=line.strip().split("\t")
+line="g__Acaryochloris.s__Acaryochloris_marina"
+data=line.strip().split("\t")
+data[-1]
+data[-3]
+data[-2]
+data[0]
+data[1]
+data
+line="g__Acetoanaerobium.s__Acetoanaerobium_sticklandii    70.297"
+data
+data=line.strip().split("\t")
+data
+data[1]
+data[0]
+line="g__Acetoanaerobium.s__Acetoanaerobium_sticklandii,70.297"
+data=line.strip().split(",")
+data[-1]
+data[-2]
+exit()
+f=open("./concatenated_GCF_000002495.2_MG8_rna.fna", "w") 
+print(range(4))
+type(range(4))
+exit()
+dict1={'argis':3, 'nikos':4}
+dict1['argis']
+dict2=dict1
+dict2[argis]
+dict2['argis']
+exit()
+import random
+random.seed(5)
+print(random.randint(1,10))
+random.seed(5)
+print(random.randint(1,10))
+random.seed(5)
+print(random.randint(1,10))
+exit()
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria":8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, {'27:argis,nikos 28:kostas,myrto'})
+data= shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria":8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, {'27:argis,nikos 28:kostas,myrto'})
+data= shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria":8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+shifts_program2.function_all(3,2023)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'])
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria":8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']})
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria":8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria":8}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria':8}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'])
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis': 1}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis': 1, 'nikos': 2, 'giorgos': 3, 'kostas': 4, 'myrto': 5, 'danai': 6. 'vasiliki': 7, 'maria': 8}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis': 1}, 1)
+data= shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+data= shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'danai': 3}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos': 2, 'giorgos': 3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria':8}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos': 2, 'giorgos': 3}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos': 2, 'giorgos': 3, 'kostas': 4, 'myrto': 5, 'danai': 6. 'vasiliki': 7, 'maria': 8}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos': 2, 'giorgos': 3, 'kostas': 4, 'myrto': 5, 'danai': 6. 'vasiliki': 7}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos': 2, 'giorgos': 3, 'kostas': 4}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos': 2, 'giorgos': 3, 'kostas': 4, 'myrto': 5}, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos': 2, 'giorgos': 3, 'kostas': 4, 'myrto': 5, 'danai' : 6 }, 1)
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos': 2, 'giorgos': 3, 'kostas': 4, 'myrto': 5, 'danai' : 6, 'vasiliki': 20}, 1)
+data= shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria':8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+data= shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6. 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+data= shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+data= shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+exit()
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+exit()
+import shifts_program2
+exit()
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+'9' in '19,25'
+'19,25'.split(separator=',')
+'19,25'.split(',')
+9 in '19,25'.split(separator=',')
+9 in '19,25'.split(',')
+exit()
+import shifts_program2
+exit()
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+exit()
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+exit()
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+exit()
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+exit()
+import shifts_program2
+exit()
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'kostas', 'myrto', 'danai', 'vasiliki', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'kostas':4, 'myrto':5, 'danai':6, 'vasiliki':7, 'maria': 8}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas,myrto,danai,vasiliki,maria'}, 1, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1']}, ['27:argis,nikos 28:kostas,myrto'])
+import shifts_program2
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'marios', 'myrto', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'marios':4, 'myrto':6, 'maria': 1}, 2, {'doctor_type_1': 'argis,nikos,giorgos', 'doctor_type_2': 'myrto,maria'}, 2, {'special_date_1': ['5,10,15,20', 3, 'At least', 2, 'doctor_type_2'], 'special_data_2': ['1,2,3,4,6,7,8,9', 2, 'None', 2, 'doctor_type_2']}, '])
+shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'marios', 'myrto', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'marios':4, 'myrto':6, 'maria': 1}, 2, {'doctor_type_1': 'argis,nikos,giorgos', 'doctor_type_2': 'myrto,maria'}, 2, {'special_date_1': ['5,10,15,20', 3, 'At least', 2, 'doctor_type_2'], 'special_data_2': ['1,2,3,4,6,7,8,9', 2, 'None', 2, 'doctor_type_2']}, ['31:argis,nikos'])
+import online_shifts_program2
+online_shifts_program2.function_all(3,2023,['argis', 'nikos', 'giorgos', 'marios', 'myrto', 'maria'], {'argis':1, 'nikos':2, 'giorgos':3, 'marios':4, 'myrto':6, 'maria': 1}, 2, {'doctor_type_1': 'argis,nikos,giorgos', 'doctor_type_2': 'myrto,maria'}, 2, {'special_date_1': ['5,10,15,20', 3, 'At least', 2, 'doctor_type_2'], 'special_data_2': ['1,2,3,4,6,7,8,9', 2, 'None', 2, 'doctor_type_2']}, ['31:argis,nikos'])
+import shifts_program2_withoutprints
+shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+import shifts_program2_withoutprints
+shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+3 in [3,4,5]
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+shifts_program2.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2
+import shifts_program2_withoutprints
+shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import shifts_program2_withoutprints
+shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+python
+exit()
+import shifts_program2_withoutprints
+shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+import /home/argis/Downloads/online_shifts_program2_withoutprints
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exxit
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 2, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 1, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 1, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 1, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 1, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 1, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3': ['16,28', 2, 'None', 2, 'doctor_type_3']}))
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3': ['16,28', 2, 'None', 2, 'doctor_type_3']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all(10,2024,['argis', 'kostas','nikos', 'giorgos', 'marios', 'myrto', 'maria', 'dimitra', 'danai'], {'argis': [1,2,3], 'kostas' : [4,5,6,10,13], 'nikos': [1,2,25,26,27,28,29,30], 'giorgos': [1,2,18,19], 'marios': [28,29,30,31], 'myrto': [5,6,7], 'maria': [10,11,12,13,14,15], 'dimitra' : [22,23,29], 'danai' : [3,4,10,11,12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas,maria'}, 2, {'special_date_1': ['4,5,11,12,18,19,25,26', 2, 'At least', 1, 'doctor_type_1'], 'special_data_2': ['18,26,30', 2, 'None', 2, 'doctor_type_2']}, ['30:kostas,maria','31:argis,nikos'])
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 2, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'maria,dimitra'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 2, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6]}, 2, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'maria,dimitra'}, 1, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6]}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas'}, 1, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all(3, 2024, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6]}, 1, {'doctor_type_1': 'argis,nikos,giorgos,kostas'}, 1, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3': ['16,28', 2, 'None', 2, 'doctor_type_3']}))
+online_shifts_program2_withoutprints.function_all((3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])exit()
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program2_withoutprints
+online_shifts_program2_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+import online_shifts_program3_withoutprints
+exit()
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+import online_shifts_program3_withoutprints
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1']},['28:argis,nikos'])
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3'},['28:argis,nikos'])
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+import online_shifts_program3_withoutprints
+online_shifts_program3_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+import online_shifts_program4_withoutprints
+online_shifts_program4_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+import online_shifts_program4_withoutprints
+online_shifts_program4_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+import online_shifts_program4_withoutprints
+online_shifts_program4_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+import online_shifts_program4_withoutprints
+online_shifts_program4_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+exit()
+import online_shifts_program4_withoutprints
+online_shifts_program4_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+import online_shifts_program4_withoutprints
+online_shifts_program4_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'maria', 'dimitra', 'manolis', 'kostas2', 'maria2', 'dimitroula', 'danai', 'vasiliki'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5], 'dimitra': [6], 'manolis': [7], 'kostas2': [8], 'maria2': [9], 'dimitroula': [10], 'danai': [11], 'vasiliki': [12]}, 3, {'doctor_type_1': 'argis,nikos,giorgos,kostas', 'doctor_type_2': 'argis,kostas2,dimitra,maria2,danai,vasiliki', 'doctor_type_3': 'giorgos,kostas2'}, 2, {'special_date_1': ['4,10,15,20', 2, 'At least', 1, 'doctor_type_2'], 'special_date_2': ['1,7,12,21,30', 3, 'At least', 1, 'doctor_type_1'], 'special_date_3':['16,28', 2, 'None', 1, 'doctor_type_3']},['28:argis,nikos'])
+online_shifts_program4_withoutprints.function_all(3, 2024, ['argis', 'nikos', 'giorgos', 'kostas', 'maria'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'maria': [5]}, 1, {'doctor_type_1': 'giorgos,maria'}, 1, {'special_date_1': ['15', 2, 'At least', 1, 'doctor_type_1']},['30:argis,nikos'])
+exit()
+import online_shifts_program4
+exit()
+import online_shifts_program5_withoutprints
+online_shifts_program5_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'marios'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'marios': [5]}, 1, {'doctor_type_1': 'kostas,marios'}, 1, {'special_date_1': ['5,10', 2, 'At least', 1, 'doctor_type_1']},['30:argis,nikos'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'kostas': 6, 'marios': 6}, 33))
+online_shifts_program5_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'marios'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'marios': [5]}, 1, {'doctor_type_1': 'kostas,marios'}, 1, {'special_date_1': ['5,10', 2, 'At least', 1, 'doctor_type_1']},['30:argis,nikos'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'kostas': 6, 'marios': 6}, 33)
+exit()
+import online_shifts_program5_withoutprints(
+online_shifts_program5_withoutprints.function_all(3, 2023, ['argis', 'nikos', 'giorgos', 'kostas', 'marios'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'kostas': [4], 'marios': [5]}, 1, {'doctor_type_1': 'kostas,marios'}, 1, {'special_date_1': ['5,10', 2, 'At least', 1, 'doctor_type_1']},['30:argis,nikos'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'kostas': 6, 'marios': 6}, 33)
+exit()
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56))
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+exit
+exit()
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+exit()
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+exit()
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+exit()
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+exit()
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+exit()
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+exit()
+import online_shifts_program5_test
+online_shifts_program5_test.function_all(2, 2023, ['argis', 'nikos', 'giorgos', 'maria', 'murto', 'danai', 'katerina', 'sotiris'], {'argis': [1], 'nikos': [2], 'giorgos': [3], 'maria': [4], 'murto': [5], 'danai': [10], 'katerina': [11], 'sotiris': [12]}, 2, {'doctor_type_1': 'argis,giorgos', 'doctor_type_2': 'maria,murto'}, 1, {'special_date_1': ['4,11', 3, 'At least', 1, 'doctor_type_1'], 'special_date_2': ['4,11', 3, 'At least', 1, 'doctor_type_2']},['30:nikos,argis'], {'argis': 7, 'nikos': 7, 'giorgos': 7, 'maria': 7, 'murto': 7, 'danai': 7, 'katerina': 7, 'sotiris': 7}, 56)
+exit()
+scipy --version
+import scipy
+import numpy
+import matplotlib
+import pandas
+import statsmodels 
+import scikit-learn
+import sklearn
+python versioons 
+import theano
+import tensorflow
+import keras
+exit()
+ar = "nik"+"os"
+print(ar)
+exit()
+from Bio import pairwise2
+from Bio import Align
+def find_differences(query_seq, subject_seq):
+    # Initialize the pairwise aligner
+    aligner = Align.PairwiseAligner()
+    # Perform pairwise alignment
+    alignments = aligner.align(query_seq, subject_seq)
+    # Get the first alignment (assuming there's only one)
+    alignment = alignments[0]
+    # Extract aligned sequences
+    query_aligned = alignment.query
+    subject_aligned = alignment.target
+    # Find the positions where the sequences differ
+    differences = []
+    for i, (q, s) in enumerate(zip(query_aligned, subject_aligned)):
+        if q != s:
+            differences.append(f"At position {i+1}: {q} -> {s}")
+    return differences
+clear
+    aligner = Align.PairwiseAligner()
+aligner = Align.PairwiseAligner()
+To copy a function defined in a Python script using Bash, you can simply extract the function definition from the Python script and write it to a new file. Here's a basic example:
+Let's say you have a Python script named `example.py` containing a function called `my_function`:
+```python
+# example.py
+def my_function():
+    print("This is my function")
+```
+You can copy this function to a new Python file using Bash with the following commands:
+```bash
+#!/bin/bash
+# Extract the function definition from example.py
+sed -n '/^def my_function():/,/^$/p' example.py > copied_function.py
+```
+Explanation:
+- `sed -n '/^def my_function():/,/^$/p' example.py`: This command extracts the lines starting from `def my_function():` until an empty line (`^$`) from `example.py`.
+- `> copied_function.py`: This command writes the extracted function to a new file named `copied_function.py`.
+alignments = aligner.align(query_seq, subject_seq)
+alignments = aligner.align("MPNFFIDRPIFAWVIAIIIMLAGGLAILKLPVAQYPTIAPPAVTISASYPGADAKTVQDTVTQVIEQNMNGIDNLMYMSSNSDSTGTVQITLTFESGTDADIAQVQVQNKLQLAMPLLPQEVQQQGVSVEKSSSSFLMVVGVINTDGTMTQEDISDYVAANMKDAISRTSGVGDVQLFGSQYAMRIWMNPNELNKFQLTPVDVITAIKAQNAQVAAGQLGGTPPVKGQQLNASIIAQTRLTSTEEFGKILLKVNQDGSRVLLRDVAKIELGGENYDIIAEFNGQPASGLGIKLATGANALDTAAAIRAELAKMEPFFPSGLKIVYPYDTTPFVKISIHEVVKTLVEAIILVFLVMYLFLQNFRATLIPTIAVPVVLLGTFAVLAAFGFSINTLTMFGMVLAIGLLVDDAIVVVENVERVMAEEGLPPKEATRKSMGQIQGALVGIAMVLSAVFVPMAFFGGSTGAIYRQFSITIVSAMALSVLVALILTPALCATMLKPIAKGDHGEGKKGFFGWFNRMFEKSTHHYTDSVGGILRSTGRYLVLYLIIVVGMAYLFVRLPSSFLPDEDQGVFMTMVQLPAGATQERTQKVLNEITHYYLTKEKNNVESVFAVNGFGFAGRGQNTGIAFVSLKDWADRPGEENKVEAITMRATRAFSQIKDAMVFAFNLPAIVELGTATGFDFELIDQAGLGHEKLTQARNQLLAEAAKHPDMLTSVRPNGLEDTPQFKIDIDQEKAQALGVSINDINTTLGAAWGGSYVNDFIDRGRVKKVYVMSEAKYRMLPDDIGDWYVRAADGQMVPFSAFSSSRWEYGSPRLERYNGLPSMEILGQAAPGKSTGEAMELMEQLASKLPTGVGYDWTGMSYQERLSGNQAPSLYAISLIVVFLCLAALYESWSIPFSVMLVVPLGVIGALLAATFRGLTNDVYFQVGLLTTIGLSAKNAILIVEFAKDLMDKEGKGLIEATLDAVRMRLRPILMTSLAFILGVMPLVISTGAGSGAQNAVGTGVMGGMVTATVLAIFFVPVFFVVVRRRFSRKNEDIEHSHTVDHH", "MPNFFIDRPIFAWVIAIIIMLAGGLAILKLPVAQYPTIAPPAVTISASYPGADAKTVQDTVTQVIEQNMNGIDNLMYMSSNSDSTGTVQITLTFESGTDADIAQVQVQNKLQLAMPLLPQEVQQQGVSVEKSSSSFLMVVGVINTDGTMTQEDISDYVAANMKDAISRTSGVGDVQLFGSQYAMRIWMNPNELNKFQLTPVDVITAIKAQNAQVAAGQLGGTPPVKGQQLNASIIAQTRLTSTEEFGKILLKVNQDGSRVLLRDVAKIELGGENYDIIAEFNGQPASGLGIKLATGANALDTAAAIRAELAKMEPFFPSGLKIVYPYDTTPFVKISIHEVVKTLVEAIILVFLVMYLFLQNFRATLIPTIAVPVVLLGTFAVLAAFGFSINTLTMFGMVLAIGLLVDDAIVVVENVERVMAEEGLPPKEATRKSMGQIQGALVGIAMVLSAVFVPMAFFGGSTGAIYRQFSITIVSAMALSVLVALILTPALCATMLKPIAKGDHGEGKKGFFGWFNRMFEKSTHHYTDSVGGILRSTGRYLVLYLIIVVGMAYLFVRLPSSFLPDEDQGVFMTMVQLPAGATQERTQKVLNEVTHYYLTKEKNNVESVFAVNGFGFAGRGQNTGIAFVSLKDWADRPGEENKVEAITMRATRAFSQIKDAMVFAFNLPAIVELGTATGFDFELIDQAGLGHEKLTQARNQLLAEAAKHPDMLTSVRPNGLEDTPQFKIDIDQEKAQALGVSINDINTTLGAAWGGSYVNDFIDRGRVKKVYVMSEAKYRMLPDDIGDWYVRAADGQMVPFSAFSSSRWEYGSPRLERYNGLPSMEILGQAAPGKSTGEAMELMEQLASKLPTGVGYDWTGMSYQERLSGNQAPSLYAISLIVVFLCLAALYESWSIPFSVMLVVPLGVIGALLAATFRGLTNDVYFQVGLLTTIGLSAKNAILIVEFAKDLMDKEGKGLIEATLDAVRMRLRPILMTSLAFILGVMPLVISTGAGSGAQNAVGTGVMGGMVTATVLAIFFVPVFFVVVRRRFSRKNEDIEHSHTVDHH")
+print(alignment)
+print(alignments)
+To copy a function defined in a Python script using Bash, you can simply extract the function definition from the Python script and write it to a new file. Here's a basic example:
+Let's say you have a Python script named `example.py` containing a function called `my_function`:
+```python
+# example.py
+def my_function():
+    print("This is my function")
+```
+You can copy this function to a new Python file using Bash with the following commands:
+```bash
+#!/bin/bash
+# Extract the function definition from example.py
+sed -n '/^def my_function():/,/^$/p' example.py > copied_function.py
+```
+Explanation:
+- `sed -n '/^def my_function():/,/^$/p' example.py`: This command extracts the lines starting from `def my_function():` until an empty line (`^$`) from `example.py`.
+- `> copied_function.py`: This command writes the extracted function to a new file named `copied_function.py`.
+To copy a function defined in a Python script using Bash, you can simply extract the function definition from the Python script and write it to a new file. Here's a basic example:
+Let's say you have a Python script named `example.py` containing a function called `my_function`:
+```python
+# example.py
+def my_function():
+    print("This is my function")
+```
+You can copy this function to a new Python file using Bash with the following commands:
+```bash
+#!/bin/bash
+# Extract the function definition from example.py
+sed -n '/^def my_function():/,/^$/p' example.py > copied_function.py
+```
+Explanation:
+- `sed -n '/^def my_function():/,/^$/p' example.py`: This command extracts the lines starting from `def my_function():` until an empty line (`^$`) from `example.py`.
+- `> copied_function.py`: This command writes the extracted function to a new file named `copied_function.py`.
+To copy a function defined in a Python script using Bash, you can simply extract the function definition from the Python script and write it to a new file. Here's a basic example:
+Let's say you have a Python script named `example.py` containing a function called `my_function`:
+```python
+# example.py
+def my_function():
+    print("This is my function")
+```
+You can copy this function to a new Python file using Bash with the following commands:
+```bash
+#!/bin/bash
+# Extract the function definition from example.py
+sed -n '/^def my_function():/,/^$/p' example.py > copied_function.py
+```
+Explanation:
+- `sed -n '/^def my_function():/,/^$/p' example.py`: This command extracts the lines starting from `def my_function():` until an empty line (`^$`) from `example.py`.
+- `> copied_function.py`: This command writes the extracted function to a new file named `copied_function.py`.
+To copy a function defined in a Python script using Bash, you can simply extract the function definition from the Python script and write it to a new file. Here's a basic example:
+Let's say you have a Python script named `example.py` containing a function called `my_function`:
+```python
+# example.py
+def my_function():
+    print("This is my function")
+```
+You can copy this function to a new Python file using Bash with the following commands:
+```bash
+#!/bin/bash
+# Extract the function definition from example.py
+sed -n '/^def my_function():/,/^$/p' example.py > copied_function.py
+```
+Explanation:
+- `sed -n '/^def my_function():/,/^$/p' example.py`: This command extracts the lines starting from `def my_function():` until an empty line (`^$`) from `example.py`.
+- `> copied_function.py`: This command writes the extracted function to a new file named `copied_function.py`.
+alignment = alingments[0]
+alignment = alignments[0]
+print(alignment)
+query_aligned = alignment.query
+subject_aligned = alignment.target
+differences = []
+for i, (q, s) in enumerate(zip(query_aligned, subject_aligned)):if q != s:differences.append(f"At position {i+1}: {q} -> {s}") return differences
+for i, (q, s) in enumerate(zip(query_aligned, subject_aligned)):                             if q != s:differences.append(f"At position {i+1}: {q} -> {s}") return differences
+differences = []
+    for i, (q, s) in enumerate(zip(query_aligned, subject_aligned)):
+        if q != s:
+            differences.append(f"At position {i+1}: {q} -> {s}")
+    return differences
+differences = []
+for i in range(5):
+print(i)
+for i in range(5):
+	print(i)
+differences = []
+for i, (q, s) in enumerate(zip(query_aligned, subject_aligned)):
+	if q != s:
+		differences.append(f"At position {i+1}: {q} -> {s}")
+return differences
+for i, (q, s) in enumerate(zip(query_aligned, subject_aligned)):
+	if q != s:
+		differences.append(f"At position {i+1}: {q} -> {s}")
+return differences
+for i, (q, s) in enumerate(zip(query_aligned, subject_aligned)):
+	if q != s:
+		differences.append(f"At position {i+1}: {q} -> {s}")
+differences
+exit()
+# Function to extract gene names from a .faa file
+def extract_genes_from_faa(file_path):
+    gene_pattern = re.compile(r'\[gene=([^\]]+)\]')
+    genes = set()
+    # Open the file based on whether it's gzipped or not
+    with gzip.open(file_path, 'rt') as file:
+        for line in file:
+            if line.startswith('>'):
+                match = gene_pattern.search(line)
+                if match:
+                    genes.add(match.group(1))
+    return genes
+# Function to extract gene names from a .faa file
+def extract_genes_from_faa(file_path):
+    gene_pattern = re.compile(r'\[gene=([^\]]+)\]')
+    genes = set()
+    # Open the file based on whether it's gzipped or not
+    with gzip.open(file_path, 'rt') as file:
+        for line in file:
+            if line.startswith('>'):
+                match = gene_pattern.search(line)
+                if match:
+                    genes.add(match.group(1))
+    return genes
+print(argis)
+exit()
+import pandas as pd
+import numpy as np
+import pandas as pd
+import os
+from Bio.Blast.Applications import NcbiblastxCommandline
+clear
+import find_amr_genes_module.py
+import find_amr_genes_module
+import find_amr_genes_module.py
+import find_amr_genes_module
+query_file = "S3323_contigs.fasta"  # Replace with the actual path
+db_path = "databases/all"
+output_file = "blastx_results.txt"
+num_threads = 4
+# Run the function
+blast_results_df = run_blastx_to_dataframe(query_file, db_path, output_file, num_threads)
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, output_file, num_threads)
+db_path = "databases/all/all_amr"
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, output_file, num_threads)
+import find_amr_genes_module
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, output_file, num_threads)
+blast_results_df.iloc[1:10,1:2]
+import find_amr_genes_module
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, output_file, num_threads)
+import find_amr_genes_module
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, output_file, num_threads)
+import find_amr_genes_module
+exit
+exit()
+query_file = "S3323_contigs.fasta"  # Replace with the actual path
+db_path = "databases/all/all_amr"
+num_threads = 4
+output_file = "blastx_results.txt"
+import find_amr_genes_module
+blast_results_df = run_blastx_to_dataframe(query_file, db_path, num_threads)
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, num_threads)
+import find_amr_genes_module
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, num_threads)
+exit()
+num_threads = 4
+query_file = "S3323_contigs.fasta"  # Replace with the actual path
+db_path = "databases/all/all_amr"
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, num_threads)
+import find_amr_genes_module
+blast_results_df = find_amr_genes_module.run_blastx_to_dataframe(query_file, db_path, num_threads)
+output_file = "blastx_results.txt"
+find_amr_genes_module.save_dataframe_to_csv(blast_results_df, output_csv_file)
+find_amr_genes_module.save_dataframe_to_csv(blast_results_df, output_file)
+protein_annotation_file="databases/genes_annotation_databases.csv"
+blast_results_df.loc[1:2,:]
+file_path="S3323_contigs.fasta"
+file_output="results.csv"
+exit()
+history
+import readline
+readline.write_history_file('python_history.txt')
